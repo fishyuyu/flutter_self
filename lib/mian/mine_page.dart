@@ -28,12 +28,11 @@ class _MinePage extends StatefulWidget {
 class _MinePageState extends State<_MinePage> {
   @override
   Widget build(BuildContext context) {
-//    new Scaffold(
-//      body: new Container(
-//        child: new Text("我的"),
-//      ),
-//    );
-    return new Text("我的");
+    return new Scaffold(
+      body: new Center(
+        child: new Text("我的"),
+      ),
+    );
   }
 
 }

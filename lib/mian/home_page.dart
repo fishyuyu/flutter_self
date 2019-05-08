@@ -28,12 +28,11 @@ class _HomePage extends StatefulWidget {
 class _HomePageState extends State<_HomePage> {
   @override
   Widget build(BuildContext context) {
-//    new Scaffold(
-//      body: new Container(
-//        child: new Text("首页"),
-//      ),
-//    );
-    return new Text("首页");
+    return new Scaffold(
+      body: new Center(
+        child: new Text("首页"),
+      ),
+    );
   }
 
 }

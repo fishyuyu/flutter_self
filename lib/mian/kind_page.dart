@@ -28,12 +28,11 @@ class _KindPage extends StatefulWidget {
 class _KindPageState extends State<_KindPage> {
   @override
   Widget build(BuildContext context) {
-//    new Scaffold(
-//      body: new Container(
-//        child: new Text("分类"),
-//      ),
-//    );
-    return new Text("分类");
+   return new Scaffold(
+      body: new Center(
+        child: new Text("分类"),
+      ),
+    );
   }
 
 }
