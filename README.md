@@ -1,2 +1,7 @@
 # flutter_self
-学习flutter
+
+##一个学习flutter的项目
+
+
+
+## Getting Started
