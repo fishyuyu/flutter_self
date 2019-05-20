@@ -26,13 +26,61 @@ class _FindPage extends StatefulWidget {
 }
 
 class _FindPageState extends State<_FindPage> {
+  var titles = ['题材', '进度', '受众', '媒体','题材', '进度', '受众', '媒体','题材', '进度', '受众', '媒体'
+  ,'题材', '进度', '受众', '媒体','题材', '进度', '受众', '媒体','题材', '进度', '受众', '媒体'];
+  
+  
+  
+  
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      body: new Center(
-        child: new Text("发现"),
-      ),
+//      body: new Center(
+//        child: new Text("发现"),
+//      ),
+    
+    
+    body: GridView.builder(gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 3,
+        mainAxisSpacing: 10.0,
+        crossAxisSpacing: 10.0,
+        childAspectRatio: 2.0),
+        itemBuilder: (BuildContext context, int index) {
+          return new ListItemWidget(titles[index]);
+        },
+        itemCount: titles.length),
+    
     );
   }
 
+}
+
+
+
+class ListItemWidget extends StatelessWidget {
+  final String title;
+
+  ListItemWidget(this.title);
+
+  @override
+  Widget build(BuildContext context) {
+    return new GestureDetector(
+      child: new Container(
+        color: Colors.white,
+        child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            new Text("$title"),
+            new Text("$title")
+          ],
+        ),
+      ),
+      onTap: () {
+        Scaffold.of(context).showSnackBar(new SnackBar(
+          content: new Text("$title"),
+        ));
+      },
+    );
+  }
 }

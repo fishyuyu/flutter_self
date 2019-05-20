@@ -32,7 +32,7 @@ class _MainPage extends StatefulWidget {
 
 class _MainPageState extends State<_MainPage> {
   /// 选中页面的索引
-  int index = 0;
+  int tapIndex = 0;
 
   ///底部标题集合
   var appBarTitles = ['首页', '分类', '书架', '我的'];
@@ -40,32 +40,18 @@ class _MainPageState extends State<_MainPage> {
   ///底部图片集合
   var bottomTabImages;
 
-  ///界面集合
-  var _pageCtr;
-  @override
-  void initState() {
-    _pageCtr = PageController(initialPage: 0, keepPage: true);
-  }
-
-  @override
-  void dispose() {
-    _pageCtr.dispose();
-    super.dispose();
-  }
-
   @override
   Widget build(BuildContext context) {
     _initData();
     return new Scaffold(
-      body:PageView(
-        controller: _pageCtr,
-        physics: NeverScrollableScrollPhysics(),
+      body:IndexedStack(
         children: <Widget>[
           HomePage(),
           KindPage(),
           FindPage(),
           MinePage(),
         ],
+        index: tapIndex,
       ),
       bottomNavigationBar: _getBottomNavigationBar(),
     );
@@ -121,7 +107,7 @@ class _MainPageState extends State<_MainPage> {
         new BottomNavigationBarItem(
             icon: _getTabIcon(3), title: getTabTitle(3)),
       ],
-      currentIndex: index,
+      currentIndex: tapIndex,
       type: BottomNavigationBarType.fixed,
       onTap: _switchPage,
     );
@@ -130,10 +116,9 @@ class _MainPageState extends State<_MainPage> {
   ///
   /// 切换界面
   ///
-  _switchPage(int value) {
+  _switchPage(int index) {
     setState(() {
-      this.index = value;
-      _pageCtr.jumpToPage(index);
+      tapIndex= index;
     });
   }
 
@@ -141,7 +126,7 @@ class _MainPageState extends State<_MainPage> {
   /// 根据索引获取所对应的标题
   ///
   getTabTitle(int page) {
-    if (page == index) {
+    if (page == tapIndex) {
       return new Text(appBarTitles[page],
           style: new TextStyle(color: Colors.red, fontSize: 12.0));
     } else {
@@ -154,7 +139,7 @@ class _MainPageState extends State<_MainPage> {
   /// 根据索引获取所对应的icon
   ///
   _getTabIcon(int page) {
-    if (page == index) {
+    if (page == tapIndex) {
       return bottomTabImages[page][1];
     } else {
       return bottomTabImages[page][0];
