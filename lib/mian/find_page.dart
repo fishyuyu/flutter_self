@@ -35,20 +35,20 @@ class _FindPageState extends State<_FindPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-//      body: new Center(
-//        child: new Text("发现"),
-//      ),
+      body: new Center(
+        child: new Text("发现"),
+      ),
     
     
-    body: GridView.builder(gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 3,
-        mainAxisSpacing: 10.0,
-        crossAxisSpacing: 10.0,
-        childAspectRatio: 2.0),
-        itemBuilder: (BuildContext context, int index) {
-          return new ListItemWidget(titles[index]);
-        },
-        itemCount: titles.length),
+//    body: GridView.builder(gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+//        crossAxisCount: 3,
+//        mainAxisSpacing: 10.0,
+//        crossAxisSpacing: 10.0,
+//        childAspectRatio: 2.0),
+//        itemBuilder: (BuildContext context, int index) {
+//          return new ListItemWidget(titles[index]);
+//        },
+//        itemCount: titles.length),
     
     );
   }

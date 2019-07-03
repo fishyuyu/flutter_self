@@ -53,16 +53,11 @@ class _FindItemState extends State<_FindItemPage> {
   Future<FindModel> _decodeFindData() async {
     // 获取本地的 json 字符串
     String personJson = await _loadJson();
-
     // 解析 json 字符串，返回的是 Map<String, dynamic> 类型
     final jsonMap = json.decode(personJson);
-
     print('jsonMap runType is ${jsonMap.runtimeType}');
-
     FindModel findModel = FindModel.fromJson(jsonMap);
-
     var list_data = findModel.listData;
-
     for (var value in list_data) {
       if (value.name == title) {
 //        findList = value.list;
@@ -100,6 +95,18 @@ class _FindItemState extends State<_FindItemPage> {
                     findList[index].name, findList[index].coverUrl);
               },
               itemCount: findList.length),
+//          : GridView.custom(
+//              gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+//                  crossAxisCount: 3,
+//                  mainAxisSpacing: 5.0,
+//                  crossAxisSpacing: 5.0,
+//                  childAspectRatio: 0.8),
+//              semanticChildCount: findList.length,
+//              childrenDelegate: new SliverChildBuilderDelegate((context, index) {
+//                return new ListItemWidget(
+//                    findList[index].name, findList[index].coverUrl);
+//              }),
+//            ),
     );
   }
 }
