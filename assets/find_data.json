@@ -1,0 +1,203 @@
+{
+  "list_data": [
+    {
+      "type": 1,
+      "name": "进度",
+      "list": [
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/023.png",
+          "name": "连载",
+          "typeId": "23"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/024.png",
+          "name": "完结",
+          "typeId": "24"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/057.png",
+          "name": "短篇",
+          "typeId": "57"
+        }
+      ]
+    },
+    {
+      "type": 2,
+      "name": "受众",
+      "list": [
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/025.png",
+          "name": "少男",
+          "typeId": "25"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/026.png",
+          "name": "少女",
+          "typeId": "26"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/027.png",
+          "name": "青年",
+          "typeId": "27"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "name": "媒体",
+      "list": [
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/028.png",
+          "name": "知音漫客",
+          "typeId": "28"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/051.png",
+          "name": "漫客栈",
+          "typeId": "51"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/029.png",
+          "name": "神漫",
+          "typeId": "29"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/030.png",
+          "name": "飒漫画",
+          "typeId": "30"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/052.png",
+          "name": "飒漫乐画",
+          "typeId": "52"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/058.png",
+          "name": "其他",
+          "typeId": "58"
+        }
+      ]
+    },
+    {
+      "type": 4,
+      "name": "题材",
+      "list": [
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/005.png",
+          "name": "热血",
+          "typeId": "5"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/006.png",
+          "name": "搞笑",
+          "typeId": "6"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/007.png",
+          "name": "玄幻",
+          "typeId": "7"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/008.png",
+          "name": "生活",
+          "typeId": "8"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/009.png",
+          "name": "恋爱",
+          "typeId": "9"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/010.png",
+          "name": "动作",
+          "typeId": "10"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/011.png",
+          "name": "科幻",
+          "typeId": "11"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/012.png",
+          "name": "战争",
+          "typeId": "12"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/013.png",
+          "name": "悬疑",
+          "typeId": "13"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/014.png",
+          "name": "恐怖",
+          "typeId": "14"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/015.png",
+          "name": "校园",
+          "typeId": "15"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/016.png",
+          "name": "历史",
+          "typeId": "16"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/017.png",
+          "name": "穿越",
+          "typeId": "17"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/018.png",
+          "name": "后宫",
+          "typeId": "18"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/019.png",
+          "name": "体育",
+          "typeId": "19"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/020.png",
+          "name": "都市",
+          "typeId": "20"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/022.png",
+          "name": "漫改",
+          "typeId": "22"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/053.png",
+          "name": "修真",
+          "typeId": "53"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/062.png",
+          "name": "霸总",
+          "typeId": "62"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/063.png",
+          "name": "古风",
+          "typeId": "63"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/064.png",
+          "name": "游戏",
+          "typeId": "64"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/065.png",
+          "name": "真人",
+          "typeId": "65"
+        },
+        {
+          "coverUrl": "https://image.zymkcdn.com/file/sort/000/000/066.png",
+          "name": "武侠",
+          "typeId": "66"
+        }
+      ]
+    }
+  ]
+}
